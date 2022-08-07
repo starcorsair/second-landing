@@ -1,6 +1,8 @@
 $fontColor: #292929;
 $hColor: #01996d;
 $backcolor: #ffff;
+$fontColor2: #0000;
+$border-buttonstyle: #01996d;
 
 body {
   color: $backcolor;
@@ -9,11 +11,26 @@ body {
 .header {
   width: 100%;
   height: 85px;
+  border: 1px solid #faf6ff;
+  padding-top: 30px;
+  padding-bottom: 30px; /*заменить!*/
+  padding-left: 274px;
+  padding-right: 276px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+  height: 23.040000915527344px;
+  width: 79.56515502929688px;
+  border-radius: 0px;
 }
 .header-chapter-1,
 .header-chapter-2,
 .header-chapter-3,
 .header-chapter-4 {
+  flex: 1 1 auto;
+  margin: 0 20px;
+  text-decoration: none;
   color: $fontColor;
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -21,4 +38,47 @@ body {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+}
+.header-link {
+  flex: 1 1 auto;
+  margin: 0 10px;
+  text-decoration: none;
+  color: $fontColor;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header-button {
+  flex: 1 1 auto;
+  margin: 0 5px;
+  border: 1px solid $border-buttonstyle;
+  border-radius: 4px;
+  height: 51px;
+  width: 183px;
+  background: $hColor;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.button-text {
+  color: $backcolor;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+
+  margin: 13px 50px 13px 50px;
+  white-space: nowrap;
+}
+.header-flex {
+  display: flex;
+}
+.navbar {
+  display: flex;
+  margin: 0px 172.46px 0px 283px;
+}
+.navbar-2 {
+  display: flex;
 }
