@@ -1,11 +1,31 @@
 body {
   color: white;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+p,
+span {
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  border: 1px solid #01996d;
+  border-radius: 4px;
+  height: 51px;
+  width: 183px;
+  background-color: #01996d;
+  cursor: pointer;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .header {
-  margin-top: -2px;
   width: 100%;
-  border: 1px solid #faf6ff;
+  height: 85px;
   display: flex;
   justify-content: space-around;
 }
@@ -22,9 +42,7 @@ body {
 .header-chapter-4 {
   flex: 1 1 auto;
   margin: 0 20px;
-  text-decoration: none;
   color: #292929;
-  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -35,9 +53,7 @@ body {
 .header-link {
   flex: 1 1 auto;
   margin: 0 10px;
-  text-decoration: none;
   color: #292929;
-  font-family: "Lato", sans-serif;
   font-style: normal;
   font-size: 20px;
   font-weight: 400;
@@ -51,13 +67,7 @@ body {
 .header-button {
   flex: 1 1 auto;
   margin: 0 5px;
-  border: 1px solid #01996d;
-  border-radius: 4px;
-  height: 51px;
-  width: 183px;
-  background-color: #01996d;
-  cursor: pointer;
-  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 13px 50px 13px 50px;
 }
 
 /*.header-button :hover {
@@ -65,13 +75,11 @@ body {
 }*/
 .button-text {
   color: white;
-  font-family: "Lato", sans-serif;
   font-style: normal;
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
   text-decoration: none;
-  margin: 13px 50px 13px 50px;
   white-space: nowrap;
   box-shadow: none;
 }
@@ -98,4 +106,49 @@ body {
 .navbar-3 {
   margin-top: 17px;
   margin-bottom: 17px;
+}
+
+.main {
+  background: url(../assets/radu-florin-CwTBt6jyagQ-unsplash-1.png) no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.main-block {
+  position: absolute;
+  width: 27%;
+  height: 60%;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-bottom: 18%;
+}
+.main-block .block-caption {
+  font-family: Georgia, sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 74px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #01996d;
+}
+.main-block .block-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #484848;
+}
+.main-block .block-button {
+  color: white;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  text-decoration: none;
+  padding: 13px 50px 13px 50px 50px;
+  white-space: nowrap;
+  box-shadow: none;
+  margin-top: 6%;
 }/*# sourceMappingURL=index.css.map */
